@@ -51,7 +51,7 @@ export default function Contact() {
                 <a href="https://github.com/tranannhtu21012006" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   GitHub
                 </a>
-                <a href="https://instagram.com/1dntmp" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                <a href="https://www.instagram.com/dnexq__/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   Instagram
                 </a>
               </FadeIn>
