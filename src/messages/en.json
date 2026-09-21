@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Frontend / Fullstack Developer",
+    "intro": "Hi, I'm Tu — a 3rd year Information Technology student at University of Economics Ho Chi Minh City. I'm passionate about building creative and intuitive digital experiences.",
+    "cta": "Get in touch"
+  },
+  "about": {
+    "label": "About",
+    "title": "About Me",
+    "university": "University of Economics HCMC",
+    "major": "Information Technology",
+    "year": "3rd Year",
+    "description": "I'm a tech-passionate student who constantly applies knowledge through real-world projects. With experience building dashboards, management apps, and web solutions, I keep learning and growing every day."
+  },
+  "skills": {
+    "label": "Skills",
+    "title": "Technologies",
+    "placeholder": "Coming soon..."
+  },
+  "projects": {
+    "label": "Projects",
+    "title": "Featured Work",
+    "viewProject": "View Project",
+    "viewCode": "View Source",
+    "liveDemo": "Live Demo",
+    "techStack": "Tech Stack",
+    "items": {
+      "clothes": {
+        "title": "Clothes Shop DashBoard",
+        "description": "A comprehensive fashion store management system featuring inventory tracking, order management, and intuitive revenue reporting.",
+        "result": "Assists store owners in grasping real-time business performance. Optimizes inventory and stock processes, minimizing manual errors, thereby saving up to 30% of daily operational time."
+      },
+      "coffee": {
+        "title": "Coffee Shop POS System",
+        "description": "A POS system and business data dashboard dedicated to coffee shops, tracking revenue and top-selling products.",
+        "result": "Streamlines the ordering and checkout process at the counter. Provides visual reports to easily analyze consumer trends, helping owners strategize ingredient stocking and menu adjustments for enhanced business efficiency."
+      },
+      "parker": {
+        "title": "Parker The S-Accountant",
+        "description": "A smart personal finance application that helps users track daily income/expenses and set financial goals.",
+        "result": "Delivers a clear, comprehensive overview of personal finances. Supports spending habit analysis through visual charts, enabling users to cut unnecessary costs and achieve financial goals 20% faster."
+      }
+    }
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Get In Touch",
+    "subtitle": "Feel free to reach out if you'd like to collaborate or just say hello.",
+    "copied": "Copied!",
+    "copyEmail": "Copy email"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+}

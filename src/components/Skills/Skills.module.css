@@ -1,0 +1,106 @@
+.skills {
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.marqueeWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+  mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.marqueeTrack {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  animation: scroll 30s linear infinite;
+}
+
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+.techItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 130px;
+  height: 140px;
+  background: rgba(30, 30, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.techItem:hover {
+  transform: translateY(-15px) scale(1.1) rotateX(10deg);
+  background: rgba(50, 50, 50, 0.8);
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+  z-index: 10;
+}
+
+.techIcon {
+  width: 55px;
+  height: 55px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.techItem:hover .techIcon {
+  transform: translateZ(40px) scale(1.15);
+}
+
+.techName {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  transition: all 0.4s ease;
+}
+
+.techItem:hover .techName {
+  color: var(--text-primary);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50% - 20px)); /* 20px is half the gap (40px) */
+  }
+}
+
+@media (max-width: 768px) {
+  .techItem {
+    width: 100px;
+    height: 120px;
+    gap: 12px;
+  }
+  .techIcon {
+    width: 45px;
+    height: 45px;
+  }
+  .techName {
+    font-size: 12px;
+  }
+  .marqueeWrapper {
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+}

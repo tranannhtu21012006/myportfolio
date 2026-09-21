@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(10, 10, 15, 0.5);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.copyright {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

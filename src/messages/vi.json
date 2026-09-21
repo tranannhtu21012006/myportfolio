@@ -1,0 +1,63 @@
+{
+  "nav": {
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  },
+  "hero": {
+    "role": "Frontend / Fullstack Developer",
+    "intro": "Xin chào, tôi là Tú — sinh viên năm 3 ngành Công nghệ Thông tin tại Đại học Kinh tế TP. Hồ Chí Minh. Tôi đam mê xây dựng những trải nghiệm số sáng tạo và trực quan.",
+    "cta": "Liên hệ với tôi"
+  },
+  "about": {
+    "label": "Giới thiệu",
+    "title": "Về tôi",
+    "university": "Đại học Kinh tế TP. Hồ Chí Minh",
+    "major": "Công nghệ Thông tin",
+    "year": "Năm 3",
+    "description": "Tôi là sinh viên đam mê công nghệ, luôn tìm cách áp dụng kiến thức vào thực tiễn thông qua các dự án thực tế. Với kinh nghiệm xây dựng dashboard, ứng dụng quản lý và các giải pháp web, tôi không ngừng học hỏi và phát triển kỹ năng mỗi ngày."
+  },
+  "skills": {
+    "label": "Kỹ năng",
+    "title": "Công nghệ",
+    "placeholder": "Sẽ được cập nhật sớm..."
+  },
+  "projects": {
+    "label": "Dự án",
+    "title": "Dự án nổi bật",
+    "viewProject": "Xem dự án",
+    "viewCode": "Xem mã nguồn",
+    "liveDemo": "Xem demo",
+    "techStack": "Công nghệ",
+    "items": {
+      "clothes": {
+        "title": "Clothes Shop DashBoard",
+        "description": "Hệ thống quản lý cửa hàng thời trang với tính năng quản lý kho hàng, đơn đặt hàng và báo cáo doanh thu trực quan.",
+        "result": "Hỗ trợ chủ cửa hàng nắm bắt tình hình kinh doanh theo thời gian thực. Tối ưu hóa quy trình kiểm kho và xuất nhập hàng, giảm thiểu sai sót do thao tác thủ công, từ đó tiết kiệm đến 30% thời gian vận hành mỗi ngày."
+      },
+      "coffee": {
+        "title": "Coffee Shop POS System",
+        "description": "Hệ thống POS và Dashboard thống kê dữ liệu kinh doanh quán cà phê, theo dõi doanh thu và top sản phẩm bán chạy.",
+        "result": "Giúp tối ưu hóa quy trình order và thanh toán tại quầy. Cung cấp báo cáo trực quan giúp dễ dàng phân tích xu hướng tiêu dùng, từ đó đưa ra chiến lược nhập nguyên liệu và điều chỉnh menu hợp lý, tăng cường hiệu quả kinh doanh."
+      },
+      "parker": {
+        "title": "Parker The S-Accountant",
+        "description": "Ứng dụng quản lý tài chính cá nhân thông minh, giúp người dùng theo dõi các khoản thu chi hằng ngày và thiết lập mục tiêu.",
+        "result": "Mang lại cái nhìn tổng quan và rõ ràng về tình hình tài chính cá nhân. Hỗ trợ phân tích thói quen chi tiêu thông qua các biểu đồ, từ đó giúp người dùng cắt giảm các khoản phí không cần thiết và đạt được mục tiêu tài chính nhanh hơn 20%."
+      }
+    }
+  },
+  "contact": {
+    "label": "Liên hệ",
+    "title": "Kết nối",
+    "subtitle": "Hãy liên hệ với tôi nếu bạn muốn cùng hợp tác hoặc trao đổi ý tưởng.",
+    "copied": "Đã sao chép!",
+    "copyEmail": "Sao chép email"
+  },
+  "footer": {
+    "rights": "Tất cả quyền được bảo lưu."
+  },
+  "language": {
+    "vi": "Tiếng Việt",
+    "en": "English"
+  }
+}
