@@ -5,16 +5,41 @@
   },
   "hero": {
     "role": "Frontend / Fullstack Developer",
-    "intro": "Xin chào, tôi là Tú — sinh viên năm 3 ngành Công nghệ Thông tin tại Đại học Kinh tế TP. Hồ Chí Minh. Tôi đam mê xây dựng những trải nghiệm số sáng tạo và trực quan.",
+    "intro": "Đam mê giải quyết các vấn đề thực tiễn tại điểm giao thoa giữa công nghệ, dữ liệu và bảo mật.",
     "cta": "Liên hệ với tôi"
   },
   "about": {
     "label": "Giới thiệu",
     "title": "Về tôi",
-    "university": "Đại học Kinh tế TP. Hồ Chí Minh",
-    "major": "Công nghệ Thông tin",
-    "year": "Năm 3",
-    "description": "Tôi là sinh viên đam mê công nghệ, luôn tìm cách áp dụng kiến thức vào thực tiễn thông qua các dự án thực tế. Với kinh nghiệm xây dựng dashboard, ứng dụng quản lý và các giải pháp web, tôi không ngừng học hỏi và phát triển kỹ năng mỗi ngày."
+    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans full-stack development, network infrastructure design, and applied security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
+    "education": {
+      "sectionTitle": "Học vấn",
+      "university": "Đại học Kinh tế TP. Hồ Chí Minh",
+      "universityShort": "UEH",
+      "period": "2024 — Hiện tại",
+      "major": "Công nghệ Thông tin",
+      "gpa": "3.2 / 4.0",
+      "highschool": "THPT Thanh Chương 1",
+      "highschoolPeriod": "2021 — 2024"
+    },
+    "competencies": {
+      "sectionTitle": "Năng lực cốt lõi",
+      "fullstack": {
+        "title": "Phát triển Full-Stack",
+        "description": "Xây dựng giải pháp web hoàn chỉnh từ giao diện frontend đến backend API mạnh mẽ. Có kinh nghiệm phát triển dashboard, hệ thống POS và ứng dụng web hiện đại với hệ sinh thái React.",
+        "skills": "React / Next.js, TypeScript, Node.js, Supabase, Tailwind CSS, REST APIs"
+      },
+      "architecture": {
+        "title": "Kiến trúc Hệ thống & Hạ tầng",
+        "description": "Thiết kế và triển khai kiến trúc hệ thống quy mô lớn. Tái thiết kế toàn bộ hạ tầng mạng cho cơ sở N trường UEH và xây dựng giải pháp POS cho doanh nghiệp thực tế.",
+        "skills": "Network Design, Database Admin, POS Systems, Infrastructure Planning, Dijkstra Algorithm, C# WinForm"
+      },
+      "research": {
+        "title": "Nghiên cứu chuyên sâu & An ninh mạng",
+        "description": "Thực hiện nghiên cứu an ninh mạng chuyên sâu với kết quả thiết thực. Phát triển framework phát hiện ransomware mới và biên soạn tài liệu kỹ thuật về phương pháp luận bảo mật.",
+        "skills": "Ransomware Detection, Framework Design, Security Analysis, Technical Writing, Academic Research"
+      }
+    }
   },
   "skills": {
     "label": "Kỹ năng",
@@ -24,6 +49,7 @@
   "projects": {
     "label": "Dự án",
     "title": "Dự án nổi bật",
+    "subtitle": "Khám phá hành trình của tôi qua các nghiên cứu học thuật, thử nghiệm cá nhân và giải pháp web chuyên nghiệp.",
     "viewProject": "Xem dự án",
     "viewCode": "Xem mã nguồn",
     "liveDemo": "Xem demo",

@@ -5,16 +5,41 @@
   },
   "hero": {
     "role": "Frontend / Fullstack Developer",
-    "intro": "Hi, I'm Tu — a 3rd year Information Technology student at University of Economics Ho Chi Minh City. I'm passionate about building creative and intuitive digital experiences.",
+    "intro": "Passionate about solving practical problems at the intersection of technology, data, and security.",
     "cta": "Get in touch"
   },
   "about": {
     "label": "About",
     "title": "About Me",
-    "university": "University of Economics HCMC",
-    "major": "Information Technology",
-    "year": "3rd Year",
-    "description": "I'm a tech-passionate student who constantly applies knowledge through real-world projects. With experience building dashboards, management apps, and web solutions, I keep learning and growing every day."
+    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans full-stack development, network infrastructure design, and applied security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
+    "education": {
+      "sectionTitle": "Education",
+      "university": "University of Economics HCMC",
+      "universityShort": "UEH",
+      "period": "2024 — Present",
+      "major": "Information Technology",
+      "gpa": "3.2 / 4.0",
+      "highschool": "Thanh Chuong 1 Highschool",
+      "highschoolPeriod": "2021 — 2024"
+    },
+    "competencies": {
+      "sectionTitle": "Core Competencies",
+      "fullstack": {
+        "title": "Full-Stack Development",
+        "description": "Crafting complete web solutions from pixel-perfect frontends to robust backend APIs. Experienced in building dashboards, POS systems, and modern web applications using the React ecosystem.",
+        "skills": "React / Next.js, TypeScript, Node.js, Supabase, Tailwind CSS, REST APIs"
+      },
+      "architecture": {
+        "title": "System Architecture & Infrastructure",
+        "description": "Designing and implementing robust system architectures at scale. Rebuilt the entire network infrastructure for UEH Campus N and engineered scalable POS solutions for real businesses.",
+        "skills": "Network Design, Database Admin, POS Systems, Infrastructure Planning, Dijkstra Algorithm, C# WinForm"
+      },
+      "research": {
+        "title": "Deep Research & Cybersecurity",
+        "description": "Conducting in-depth cybersecurity research with tangible outcomes. Developed a novel ransomware detection framework and authored technical documentation on security methodologies.",
+        "skills": "Ransomware Detection, Framework Design, Security Analysis, Technical Writing, Academic Research"
+      }
+    }
   },
   "skills": {
     "label": "Skills",
@@ -24,6 +49,7 @@
   "projects": {
     "label": "Projects",
     "title": "Featured Work",
+    "subtitle": "Explore my journey through academic research, personal experiments, and professional web solutions.",
     "viewProject": "View Project",
     "viewCode": "View Source",
     "liveDemo": "Live Demo",
