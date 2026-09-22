@@ -1,84 +1,670 @@
-.grid {
+/* ============================================
+   ABOUT SECTION — Orbital Layout + Fan Cards
+   ============================================ */
+
+/* ---------- Profile Grid (3-column) ---------- */
+.profileGrid {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 60px;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 40px;
   align-items: center;
+  margin-bottom: 100px;
 }
 
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4/5;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.15); /* Soft glow */
-  transition: all 0.5s ease;
-}
-
-.imageWrapper:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.3); /* Stronger glow on hover */
-  border-color: rgba(255, 255, 255, 0.4);
-}
-
-.imageWrapper::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(10, 10, 15, 0.8), transparent);
-  pointer-events: none;
-}
-
-.image {
-  object-fit: cover;
-  transition: transform 0.8s ease;
-}
-
-.imageWrapper:hover .image {
-  transform: scale(1.05);
-}
-
-.card {
-  padding: 40px;
+/* ---------- Education Column ---------- */
+.educationCol {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 24px;
 }
 
-.uni {
-  font-family: var(--font-heading);
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-bottom: 12px;
+.eduCard {
+  background: linear-gradient(
+    135deg,
+    rgba(108, 99, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0.03) 50%,
+    rgba(0, 212, 170, 0.04) 100%
+  );
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
 }
 
-.meta {
+.eduCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.eduCard:hover {
+  border-color: rgba(108, 99, 255, 0.25);
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(108, 99, 255, 0.08);
+}
+
+.eduCard:hover::before {
+  opacity: 1;
+}
+
+.eduIconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffff;
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-size: 16px;
+  justify-content: center;
+  margin-bottom: 16px;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.schoolLogo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.eduTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.eduMeta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.eduPeriod {
+  font-size: 13px;
+  font-weight: 500;
   color: var(--accent-primary);
+  letter-spacing: 0.5px;
+}
+
+.eduDivider {
+  color: var(--text-tertiary);
+  font-size: 10px;
+}
+
+.eduMajor {
+  font-size: 13px;
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
-.dot {
-  color: var(--text-tertiary);
+.gpaRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 212, 170, 0.08);
+  border: 1px solid rgba(0, 212, 170, 0.15);
+  border-radius: 8px;
+  padding: 6px 14px;
+  margin-bottom: 16px;
 }
 
-.description {
-  font-size: 18px;
-  line-height: 1.8;
+.gpaLabel {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
+}
+
+.gpaValue {
+  font-family: var(--font-heading);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.courseList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.courseTag {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.courseTag:hover {
+  background: rgba(108, 99, 255, 0.12);
+  border-color: rgba(108, 99, 255, 0.3);
+  color: var(--text-primary);
+}
+
+/* --- Highschool Card --- */
+.hsCard {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 212, 170, 0.05) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+}
+
+.hsCard:hover {
+  border-color: rgba(0, 212, 170, 0.25);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.3),
+    0 0 30px rgba(0, 212, 170, 0.08);
+}
+
+.achievements {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.achieveItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  padding: 6px 0;
+}
+
+.achieveIcon {
+  font-size: 16px;
+}
+
+/* ---------- Avatar Column ---------- */
+.avatarCol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatarWrapper {
+  position: relative;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatarFloat {
+  animation: float 5s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.avatarImage {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  transition: filter 0.5s ease;
+}
+
+.avatarWrapper:hover .avatarImage {
+  filter: drop-shadow(0 25px 50px rgba(108, 99, 255, 0.25));
+}
+
+.avatarGlow {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 80px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(108, 99, 255, 0.35) 0%,
+    rgba(0, 212, 170, 0.15) 40%,
+    transparent 70%
+  );
+  filter: blur(25px);
+  z-index: 1;
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0%, 100% { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  50% { opacity: 1; transform: translateX(-50%) scale(1.15); }
+}
+
+.avatarRing {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  border: 1px solid rgba(108, 99, 255, 0.1);
+  z-index: 0;
+  animation: ringRotate 20s linear infinite;
+}
+
+@keyframes ringRotate {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ---------- Description Column ---------- */
+.descriptionCol {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.descriptionText {
+  font-size: 15px;
+  line-height: 1.75;
+  font-weight: 400;
+  color: var(--text-secondary);
+  max-width: 450px;
+}
+
+
+/* ============================================
+   CORE COMPETENCIES — Fan Card Layout
+   ============================================ */
+
+.competenciesSection {
+  text-align: center;
+}
+
+.competenciesTitle {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+.cardFan {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  perspective: 1200px;
+  padding: 40px 0 60px;
+}
+
+/* --- Individual Competency Card --- */
+.compCard {
+  width: 340px;
+  flex-shrink: 0;
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: default;
+}
+
+.compCard1 {
+  transform: rotate(-6deg) translateY(20px);
+  z-index: 1;
+}
+
+.compCard2 {
+  transform: rotate(0deg) translateY(-10px);
+  z-index: 3;
+  margin: 0 -30px;
+}
+
+.compCard3 {
+  transform: rotate(6deg) translateY(20px);
+  z-index: 1;
+}
+
+.compCard1:hover {
+  transform: rotate(-2deg) translateY(-10px) scale(1.05);
+  z-index: 10;
+}
+
+.compCard2:hover {
+  transform: rotate(0deg) translateY(-25px) scale(1.08);
+  z-index: 10;
+}
+
+.compCard3:hover {
+  transform: rotate(2deg) translateY(-10px) scale(1.05);
+  z-index: 10;
+}
+
+.compCardInner {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  text-align: left;
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+/* Gradient tints for each card */
+.compCard1 .compCardInner {
+  background: linear-gradient(
+    160deg,
+    rgba(108, 99, 255, 0.1) 0%,
+    rgba(20, 20, 35, 0.9) 40%,
+    rgba(15, 15, 25, 0.95) 100%
+  );
+}
+
+.compCard2 .compCardInner {
+  background: linear-gradient(
+    160deg,
+    rgba(0, 212, 170, 0.1) 0%,
+    rgba(20, 20, 35, 0.9) 40%,
+    rgba(15, 15, 25, 0.95) 100%
+  );
+}
+
+.compCard3 .compCardInner {
+  background: linear-gradient(
+    160deg,
+    rgba(56, 189, 248, 0.1) 0%,
+    rgba(20, 20, 35, 0.9) 40%,
+    rgba(15, 15, 25, 0.95) 100%
+  );
+}
+
+.compCard1:hover .compCardInner {
+  border-color: rgba(108, 99, 255, 0.35);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(108, 99, 255, 0.12),
+    inset 0 1px 0 rgba(108, 99, 255, 0.2);
+}
+
+.compCard2:hover .compCardInner {
+  border-color: rgba(0, 212, 170, 0.35);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(0, 212, 170, 0.12),
+    inset 0 1px 0 rgba(0, 212, 170, 0.2);
+}
+
+.compCard3:hover .compCardInner {
+  border-color: rgba(56, 189, 248, 0.35);
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.4),
+    0 0 40px rgba(56, 189, 248, 0.12),
+    inset 0 1px 0 rgba(56, 189, 248, 0.2);
+}
+
+/* Subtle gradient overlay inside card */
+.compGradient {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: 0.15;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.compCard1 .compGradient { background: var(--accent-primary); }
+.compCard2 .compGradient { background: var(--accent-secondary); }
+.compCard3 .compGradient { background: #38bdf8; }
+
+.compCard:hover .compGradient {
+  opacity: 0.3;
+}
+
+.compHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.compIconWrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.compCard1 .compIconWrapper {
+  background: rgba(108, 99, 255, 0.15);
+  color: var(--accent-primary);
+}
+
+.compCard2 .compIconWrapper {
+  background: rgba(0, 212, 170, 0.15);
+  color: var(--accent-secondary);
+}
+
+.compCard3 .compIconWrapper {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+.compTitle {
+  font-family: var(--font-heading);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.compDesc {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.compDivider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  margin-bottom: 20px;
+}
+
+.skillGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.12);
+  transform: translateX(4px);
+}
+
+.skillIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   color: var(--text-secondary);
 }
 
-@media (max-width: 991px) {
-  .grid {
+.skillItem:hover .skillIcon {
+  color: var(--text-primary);
+}
+
+.skillName {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1100px) {
+  .profileGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .avatarCol {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .avatarWrapper {
+    width: 240px;
+  }
+
+  .avatarImage {
+    width: 240px;
+  }
+
+  .cardFan {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .compCard {
+    width: 300px;
+  }
+
+  .compCard1,
+  .compCard2,
+  .compCard3 {
+    transform: rotate(0deg) translateY(0);
+    margin: 0;
+  }
+
+  .compCard1:hover,
+  .compCard2:hover,
+  .compCard3:hover {
+    transform: translateY(-10px) scale(1.03);
+  }
+}
+
+@media (max-width: 767px) {
+  .profileGrid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 28px;
+    margin-bottom: 60px;
+  }
+
+  .avatarCol {
+    grid-row: 1;
+  }
+
+  .avatarWrapper {
+    width: 200px;
+  }
+
+  .avatarImage {
+    width: 200px;
+  }
+
+  .avatarRing {
+    width: 230px;
+    height: 230px;
+  }
+
+  .educationCol {
+    gap: 16px;
+  }
+
+  .eduCard {
+    padding: 22px;
+  }
+
+  .eduTitle {
+    font-size: 18px;
   }
   
-  .imageWrapper {
-    aspect-ratio: 16/9;
+  .descriptionCol {
+    padding: 0;
+  }
+
+  .descriptionText {
+    font-size: 18px;
+  }
+
+  .competenciesTitle {
+    margin-bottom: 32px;
+  }
+
+  .cardFan {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0 40px;
+  }
+
+  .compCard {
+    width: 100%;
+    max-width: 380px;
+  }
+
+  .compCardInner {
+    padding: 28px 22px;
+  }
+
+  .compTitle {
+    font-size: 18px;
+  }
+
+  .skillGrid {
+    grid-template-columns: 1fr;
   }
 }

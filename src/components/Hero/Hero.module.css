@@ -34,6 +34,24 @@
   font-weight: 700;
   letter-spacing: -0.5px;
   color: #ffcccc;
+  min-height: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .intro {
