@@ -72,21 +72,25 @@ export default function About() {
             </FadeIn>
 
             <FadeIn delay={0.15}>
-              <div className={`${styles.eduCard} ${styles.hsCard}`}>
-                <div className={styles.eduIconWrapper}>
-                  <Image src="/tc1-logo.png" alt="TC1 Logo" width={32} height={32} className={styles.schoolLogo} unoptimized />
+              <div className={styles.langCard}>
+                <div className={styles.langHeader}>
+                  <Globe size={18} className={styles.langIcon} />
+                  <span className={styles.langTitle}>English Communication</span>
                 </div>
-                <h3 className={styles.eduTitle}>{t('education.highschool')}</h3>
-                <span className={styles.eduPeriod}>{t('education.highschoolPeriod')}</span>
-                <div className={styles.achievements}>
-                  <div className={styles.achieveItem}>
-                    <span className={styles.achieveIcon}>🏐</span>
-                    <span>Volleyball Champion</span>
+                <div className={styles.langLevel}>Intermediate</div>
+                <div className={styles.progressTrack}>
+                  <div className={styles.progressFill} style={{ width: '65%' }}>
+                    <div className={styles.starMarker}>
+                      <svg className={styles.starSvg} viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l2.4 7.4h7.6l-6 4.6 2.3 7.4L12 17l-6.3 4.4 2.3-7.4-6-4.6h7.6z" />
+                      </svg>
+                      <div className={styles.starGlow} />
+                    </div>
                   </div>
-                  <div className={styles.achieveItem}>
-                    <span className={styles.achieveIcon}>⚽</span>
-                    <span>2× Football Silver Medal</span>
-                  </div>
+                </div>
+                <div className={styles.progressLabels}>
+                  <span>Beginner</span>
+                  <span>Advanced</span>
                 </div>
               </div>
             </FadeIn>
