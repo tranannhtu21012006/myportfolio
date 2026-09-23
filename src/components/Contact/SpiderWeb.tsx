@@ -208,6 +208,7 @@ export default function SpiderWeb({ className = '' }: { className?: string }) {
     let lastTime = performance.now();
 
     function animate(timestamp: number) {
+      if (!ctx) return;
       const dt = timestamp - lastTime;
       lastTime = timestamp;
 
