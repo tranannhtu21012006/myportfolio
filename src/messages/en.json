@@ -55,10 +55,10 @@
     "liveDemo": "Live Demo",
     "techStack": "Tech Stack",
     "items": {
-      "clothes": {
-        "title": "Clothes Shop DashBoard",
-        "description": "A comprehensive fashion store management system featuring inventory tracking, order management, and intuitive revenue reporting.",
-        "result": "Assists store owners in grasping real-time business performance. Optimizes inventory and stock processes, minimizing manual errors, thereby saving up to 30% of daily operational time."
+      "dijkstra": {
+        "title": "Dijkstra Route Optimizer",
+        "description": "A desktop application built with C# WinForms that implements Dijkstra's algorithm to calculate the shortest routes and optimize transportation costs between provinces and cities across Southern Vietnam. Features an interactive map visualization, adjacency matrix display, and real-time cost estimation including distance, fuel consumption, and shipping expenses.",
+        "result": "Enables logistics planners to instantly determine the most cost-effective route between any two Southern Vietnam locations. Reduces manual route planning time by visualizing graph structures and adjacency matrices, providing accurate fuel and cost estimations for optimized freight operations."
       },
       "coffee": {
         "title": "Coffee Shop POS System",

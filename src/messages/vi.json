@@ -11,7 +11,7 @@
   "about": {
     "label": "Giới thiệu",
     "title": "Về tôi",
-    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans full-stack development, network infrastructure design, and applied security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
+    "description": "Tôi là sinh viên năm 3 ngành CNTT, kết nối lý thuyết học thuật với kỹ thuật thực tế. Trọng tâm của tôi là phát triển full-stack, thiết kế hạ tầng mạng và nghiên cứu bảo mật ứng dụng. Tôi coi mỗi dự án là một cơ hội học hỏi — xây dựng các hệ thống giải quyết vấn đề thực tế đồng thời rèn luyện kỹ năng của mình trên toàn bộ stack công nghệ.",
     "education": {
       "sectionTitle": "Học vấn",
       "university": "Đại học Kinh tế TP. Hồ Chí Minh",
@@ -55,10 +55,10 @@
     "liveDemo": "Xem demo",
     "techStack": "Công nghệ",
     "items": {
-      "clothes": {
-        "title": "Clothes Shop DashBoard",
-        "description": "Hệ thống quản lý cửa hàng thời trang với tính năng quản lý kho hàng, đơn đặt hàng và báo cáo doanh thu trực quan.",
-        "result": "Hỗ trợ chủ cửa hàng nắm bắt tình hình kinh doanh theo thời gian thực. Tối ưu hóa quy trình kiểm kho và xuất nhập hàng, giảm thiểu sai sót do thao tác thủ công, từ đó tiết kiệm đến 30% thời gian vận hành mỗi ngày."
+      "dijkstra": {
+        "title": "Dijkstra Route Optimizer",
+        "description": "Ứng dụng desktop xây dựng bằng C# WinForms, áp dụng thuật toán Dijkstra để tính toán tuyến đường ngắn nhất và tối ưu hóa chi phí vận tải giữa các tỉnh thành khu vực Miền Nam Việt Nam. Tích hợp bản đồ tương tác, hiển thị ma trận kề và ước tính chi phí theo thời gian thực bao gồm quãng đường, nhiên liệu và phí vận chuyển.",
+        "result": "Cho phép các nhà hoạch định logistics xác định ngay lập tức tuyến đường tiết kiệm chi phí nhất giữa hai địa điểm bất kỳ tại miền Nam Việt Nam. Giảm thiểu thời gian lập kế hoạch định tuyến thủ công bằng cách trực quan hóa cấu trúc đồ thị và ma trận kề, cung cấp các ước tính chính xác về nhiên liệu và chi phí để tối ưu hóa hoạt động vận tải hàng hóa."
       },
       "coffee": {
         "title": "Coffee Shop POS System",
