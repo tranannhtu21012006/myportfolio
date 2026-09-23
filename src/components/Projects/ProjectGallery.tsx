@@ -22,12 +22,12 @@ type Project = {
 const PROJECT_DATA: Project[] = [
   {
     id: 1,
-    key: 'clothes',
+    key: 'dijkstra',
     category: 'Academic',
-    date: 'May 2026 - Present',
-    teamSize: 1,
-    techStack: ['React', 'Next.js', 'Tailwind', 'Supabase'],
-    image: '/clothes-dashboard.png',
+    date: 'Apr 2025 - May 2025',
+    teamSize: 4,
+    techStack: ['C#', 'WinForms', '.NET', 'Dijkstra'],
+    image: '/dijkstra.png',
     demoUrl: '#',
     githubUrl: 'https://github.com/tranannhtu21012006'
   },
@@ -45,7 +45,7 @@ const PROJECT_DATA: Project[] = [
   {
     id: 3,
     key: 'parker',
-    category: 'Academic',
+    category: 'Personal',
     date: 'Jun 2026 - Present',
     teamSize: 1,
     techStack: ['Next.js', 'TypeScript', 'Supabase', 'Framer Motion'],
