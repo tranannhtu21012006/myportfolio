@@ -29,7 +29,7 @@ const PROJECT_DATA: Project[] = [
     techStack: ['C#', 'WinForms', '.NET', 'Dijkstra'],
     image: '/dijkstra.png',
     demoUrl: '#',
-    githubUrl: 'https://github.com/tranannhtu21012006'
+    githubUrl: 'https://github.com/tranannhtu21012006/CTDL_GT_Algorithm'
   },
   {
     id: 2,
@@ -46,12 +46,12 @@ const PROJECT_DATA: Project[] = [
     id: 3,
     key: 'parker',
     category: 'Personal',
-    date: 'Jun 2026 - Present',
+    date: 'Jun 2026 - Jul 2026',
     teamSize: 1,
     techStack: ['Next.js', 'TypeScript', 'Supabase', 'Framer Motion'],
     image: '/parker.png',
     demoUrl: '#',
-    githubUrl: 'https://github.com/tranannhtu21012006'
+    githubUrl: 'https://github.com/tranannhtu21012006/PeterParker'
   }
 ];
 
@@ -139,6 +139,10 @@ export default function ProjectGallery() {
                 <p className={styles.projectDesc}>
                   {t(`items.${project.key}.description`)}
                 </p>
+
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
+                  Github Repository <ArrowUpRight size={16} />
+                </a>
                 
                 <div className={styles.techTags}>
                   {project.techStack.map(tech => (

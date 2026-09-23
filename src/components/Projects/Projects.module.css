@@ -187,8 +187,25 @@
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-secondary);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   flex-grow: 1;
+}
+
+.githubLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent-primary);
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.githubLink:hover {
+  color: var(--text-primary);
+  gap: 10px;
 }
 
 .techTags {
