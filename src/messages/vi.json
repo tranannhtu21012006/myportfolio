@@ -11,7 +11,7 @@
   "about": {
     "label": "Giới thiệu",
     "title": "Về tôi",
-    "description": "Tôi là sinh viên năm 3 ngành CNTT, kết nối lý thuyết học thuật với kỹ thuật thực tế. Trọng tâm của tôi là phát triển full-stack, thiết kế hạ tầng mạng và nghiên cứu bảo mật ứng dụng. Tôi coi mỗi dự án là một cơ hội học hỏi — xây dựng các hệ thống giải quyết vấn đề thực tế đồng thời rèn luyện kỹ năng của mình trên toàn bộ stack công nghệ.",
+    "description": "Tôi là sinh viên năm 3 ngành CNTT, kết nối lý thuyết học thuật với kỹ thuật thực tế. Trọng tâm của tôi trải dài từ thiết kế hạ tầng mạng, vận hành hệ thống, ứng dụng AI hỗ trợ thực hành DevOps — sau đó mở rộng sang phát triển full-stack và nghiên cứu bảo mật. Tôi coi mỗi dự án là một cơ hội học hỏi — xây dựng các hệ thống giải quyết vấn đề thực tế đồng thời rèn luyện kỹ năng của mình trên toàn bộ stack công nghệ.",
     "education": {
       "sectionTitle": "Học vấn",
       "university": "Đại học Kinh tế TP. Hồ Chí Minh",
@@ -71,6 +71,12 @@
         "result": "Mang lại cái nhìn tổng quan và rõ ràng về tình hình tài chính cá nhân. Hỗ trợ phân tích thói quen chi tiêu thông qua các biểu đồ, từ đó giúp người dùng cắt giảm các khoản phí không cần thiết và đạt được mục tiêu tài chính nhanh hơn 20%."
       }
     }
+  },
+  "experience": {
+    "label": "Kinh nghiệm",
+    "title": "Kinh nghiệm làm việc",
+    "subtitle": "Trải nghiệm thực tế kết nối lý thuyết với thực hành.",
+    "openTo": "Sẵn sàng cho cơ hội tiếp theo..."
   },
   "contact": {
     "label": "Liên hệ",

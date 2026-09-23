@@ -11,7 +11,7 @@
   "about": {
     "label": "About",
     "title": "About Me",
-    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans full-stack development, network infrastructure design, and applied security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
+    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans network infrastructure design, system operations, applied AI to support DevOps practices — then extends into full-stack development and security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
     "education": {
       "sectionTitle": "Education",
       "university": "University of Economics HCMC",
@@ -71,6 +71,12 @@
         "result": "Delivers a clear, comprehensive overview of personal finances. Supports spending habit analysis through visual charts, enabling users to cut unnecessary costs and achieve financial goals 20% faster."
       }
     }
+  },
+  "experience": {
+    "label": "Experience",
+    "title": "Work Experience",
+    "subtitle": "Real-world experience that bridges theory and practice.",
+    "openTo": "Open to the next opportunity..."
   },
   "contact": {
     "label": "Contact",
