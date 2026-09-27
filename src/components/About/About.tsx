@@ -12,7 +12,7 @@ import {
 } from 'lucide-react';
 import styles from './About.module.css';
 
-const COURSES = ['DSA', 'OOP', 'Database Administration', 'Security Research', 'Technical Writing'];
+const COURSES = ['TCP/IP', 'DSA', 'OOP', 'Database Administration', 'Technical Writing'];
 
 const COMPETENCIES = [
   {
