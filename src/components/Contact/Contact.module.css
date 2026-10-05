@@ -3,10 +3,20 @@
 }
 
 .card {
-  padding: 80px 40px;
+  padding: 100px 40px;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-height: 420px;
+}
+
+.webCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .card::before {
@@ -29,6 +39,8 @@
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .title {

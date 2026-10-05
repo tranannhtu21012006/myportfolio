@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import GlassCard from '../ui/GlassCard';
 import FadeIn from '../ui/FadeIn';
+import SpiderWeb from './SpiderWeb';
 import styles from './Contact.module.css';
 
 export default function Contact() {
@@ -22,6 +23,7 @@ export default function Contact() {
       <div className="container">
         <FadeIn>
           <GlassCard className={styles.card}>
+            <SpiderWeb className={styles.webCanvas} />
             <div className={styles.content}>
               <h2 className={styles.title}>GET IN TOUCH</h2>
               <FadeIn delay={0.2}>
@@ -50,6 +52,9 @@ export default function Contact() {
               <FadeIn delay={0.6} className={styles.social}>
                 <a href="https://github.com/tranannhtu21012006" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/billytran201/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+                  LinkedIn
                 </a>
                 <a href="https://www.instagram.com/dnexq__/" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
                   Instagram

@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import SmoothScroll from '@/components/ui/SmoothScroll';
 import { Metadata } from 'next';
+import '@/app/globals.css';
 
 export const metadata: Metadata = {
   title: 'Trần Anh Tú | Developer Portfolio',

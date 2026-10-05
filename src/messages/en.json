@@ -5,16 +5,41 @@
   },
   "hero": {
     "role": "Frontend / Fullstack Developer",
-    "intro": "Hi, I'm Tu — a 3rd year Information Technology student at University of Economics Ho Chi Minh City. I'm passionate about building creative and intuitive digital experiences.",
+    "intro": "Passionate about solving practical problems at the intersection of technology, data, and security.",
     "cta": "Get in touch"
   },
   "about": {
     "label": "About",
     "title": "About Me",
-    "university": "University of Economics HCMC",
-    "major": "Information Technology",
-    "year": "3rd Year",
-    "description": "I'm a tech-passionate student who constantly applies knowledge through real-world projects. With experience building dashboards, management apps, and web solutions, I keep learning and growing every day."
+    "description": "I'm a 3rd-year IT student connecting academic theory with real-world engineering. My focus spans network infrastructure design, system operations, applied AI to support DevOps practices — then extends into full-stack development and security research. I approach every project as a learning opportunity — building systems that solve real problems while sharpening my skills across the stack.",
+    "education": {
+      "sectionTitle": "Education",
+      "university": "University of Economics HCMC",
+      "universityShort": "UEH",
+      "period": "2024 — Present",
+      "major": "Information Technology",
+      "gpa": "3.2 / 4.0",
+      "highschool": "Thanh Chuong 1 Highschool",
+      "highschoolPeriod": "2021 — 2024"
+    },
+    "competencies": {
+      "sectionTitle": "Core Competencies",
+      "fullstack": {
+        "title": "Full-Stack Development",
+        "description": "Crafting complete web solutions from pixel-perfect frontends to robust backend APIs. Experienced in building dashboards, POS systems, and modern web applications using the React ecosystem.",
+        "skills": "React / Next.js, TypeScript, Node.js, Supabase, Tailwind CSS, REST APIs"
+      },
+      "architecture": {
+        "title": "System Architecture & Infrastructure",
+        "description": "Designing and implementing robust system architectures at scale. Rebuilt the entire network infrastructure for UEH Campus N and engineered scalable POS solutions for real businesses.",
+        "skills": "Network Design, Database Admin, POS Systems, Infrastructure Planning, Dijkstra Algorithm, C# WinForm"
+      },
+      "research": {
+        "title": "Deep Research & Cybersecurity",
+        "description": "Conducting in-depth cybersecurity research with tangible outcomes. Developed a novel ransomware detection framework and authored technical documentation on security methodologies.",
+        "skills": "Ransomware Detection, Framework Design, Security Analysis, Technical Writing, Academic Research"
+      }
+    }
   },
   "skills": {
     "label": "Skills",
@@ -24,26 +49,50 @@
   "projects": {
     "label": "Projects",
     "title": "Featured Work",
+    "subtitle": "Explore my journey through academic research, personal experiments, and professional web solutions.",
     "viewProject": "View Project",
     "viewCode": "View Source",
     "liveDemo": "Live Demo",
     "techStack": "Tech Stack",
     "items": {
-      "clothes": {
-        "title": "Clothes Shop DashBoard",
-        "description": "A comprehensive fashion store management system featuring inventory tracking, order management, and intuitive revenue reporting.",
-        "result": "Assists store owners in grasping real-time business performance. Optimizes inventory and stock processes, minimizing manual errors, thereby saving up to 30% of daily operational time."
+      "dijkstra": {
+        "title": "Dijkstra Route Optimizer",
+        "description": "A desktop application built with C# WinForms that implements Dijkstra's algorithm to calculate the shortest routes and optimize transportation costs between provinces and cities across Southern Vietnam. Features an interactive map visualization, adjacency matrix display, and real-time cost estimation including distance, fuel consumption, and shipping expenses.",
+        "result": "Enables logistics planners to instantly determine the most cost-effective route between any two Southern Vietnam locations. Reduces manual route planning time by visualizing graph structures and adjacency matrices, providing accurate fuel and cost estimations for optimized freight operations.",
+        "context": "This academic project was aimed at understanding and applying graph theory in real-world scenarios, particularly focusing on logistics and route optimization.",
+        "mainWork": "I designed the system architecture, implemented Dijkstra's algorithm from scratch in C#, and built the WinForms interactive map interface for visualizing the shortest path."
       },
       "coffee": {
-        "title": "Coffee Shop POS System",
+        "title": "Nha Ba Teria POS & Internal System",
         "description": "A POS system and business data dashboard dedicated to coffee shops, tracking revenue and top-selling products.",
-        "result": "Streamlines the ordering and checkout process at the counter. Provides visual reports to easily analyze consumer trends, helping owners strategize ingredient stocking and menu adjustments for enhanced business efficiency."
+        "result": "Streamlines the ordering and checkout process at the counter. Provides visual reports to easily analyze consumer trends, helping owners strategize ingredient stocking and menu adjustments for enhanced business efficiency.",
+        "context": "A real-world internal tool developed for Nha Ba Teria coffee shop to manage their POS, inventory, and analytics efficiently.",
+        "mainWork": "I developed the full frontend using React, Vite, and CSS Modules. Created dynamic data visualizations using Chart.js to help track revenue and best-selling products."
       },
       "parker": {
         "title": "Parker The S-Accountant",
         "description": "A smart personal finance application that helps users track daily income/expenses and set financial goals.",
-        "result": "Delivers a clear, comprehensive overview of personal finances. Supports spending habit analysis through visual charts, enabling users to cut unnecessary costs and achieve financial goals 20% faster."
+        "result": "Delivers a clear, comprehensive overview of personal finances. Supports spending habit analysis through visual charts, enabling users to cut unnecessary costs and achieve financial goals 20% faster.",
+        "context": "A personal project driven by the need for a seamless and intuitive personal finance tracker with modern web technologies.",
+        "mainWork": "Designed the UI/UX, implemented the frontend with Next.js and Tailwind, integrated Supabase for authentication and database management, and added fluid animations with Framer Motion."
+      },
+      "ueh-network": {
+        "title": "UEH Network Infrastructure Design",
+        "description": "Designing a complete network model tailored to the infrastructure, spatial requirements, and business needs of UEH - Campus N.",
+        "result": "Created a comprehensive network infrastructure platform that meets current demands, ensures security, provides easy management, and scales for future expansion.",
+        "context": "The 'UEH Campus N Network System Design' was carried out to build a network model suited to the infrastructure characteristics, spatial usage, and operational requirements of Campus N. Through on-site surveys, needs analysis, and technical solution selection, the project aimed to propose a complete network system including server services, security solutions, VLAN segmentation, wireless connectivity, and CCTV camera systems.",
+        "mainWork": "Configured essential network devices including ISP Router, Main Router, ASA Firewall, CoreSW1, CoreSW2, Web Server, and FTP/Email Server."
       }
+    },
+    "details": {
+      "completed": "Completed",
+      "teamSize": "Team Size",
+      "tools": "Tools used",
+      "result": "Result",
+      "sourceCode": "Source Code",
+      "context": "Context",
+      "mainWork": "Main Work",
+      "backToHome": "Back to Home"
     }
   },
   "contact": {

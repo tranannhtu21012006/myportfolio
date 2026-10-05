@@ -5,16 +5,41 @@
   },
   "hero": {
     "role": "Frontend / Fullstack Developer",
-    "intro": "Xin chào, tôi là Tú — sinh viên năm 3 ngành Công nghệ Thông tin tại Đại học Kinh tế TP. Hồ Chí Minh. Tôi đam mê xây dựng những trải nghiệm số sáng tạo và trực quan.",
+    "intro": "Đam mê giải quyết các vấn đề thực tiễn tại điểm giao thoa giữa công nghệ, dữ liệu và bảo mật.",
     "cta": "Liên hệ với tôi"
   },
   "about": {
     "label": "Giới thiệu",
     "title": "Về tôi",
-    "university": "Đại học Kinh tế TP. Hồ Chí Minh",
-    "major": "Công nghệ Thông tin",
-    "year": "Năm 3",
-    "description": "Tôi là sinh viên đam mê công nghệ, luôn tìm cách áp dụng kiến thức vào thực tiễn thông qua các dự án thực tế. Với kinh nghiệm xây dựng dashboard, ứng dụng quản lý và các giải pháp web, tôi không ngừng học hỏi và phát triển kỹ năng mỗi ngày."
+    "description": "Tôi là sinh viên năm 3 ngành CNTT, kết nối lý thuyết học thuật với kỹ thuật thực tế. Trọng tâm của tôi trải dài từ thiết kế hạ tầng mạng, vận hành hệ thống, ứng dụng AI hỗ trợ thực hành DevOps — sau đó mở rộng sang phát triển full-stack và nghiên cứu bảo mật. Tôi coi mỗi dự án là một cơ hội học hỏi — xây dựng các hệ thống giải quyết vấn đề thực tế đồng thời rèn luyện kỹ năng của mình trên toàn bộ stack công nghệ.",
+    "education": {
+      "sectionTitle": "Học vấn",
+      "university": "Đại học Kinh tế TP. Hồ Chí Minh",
+      "universityShort": "UEH",
+      "period": "2024 — Hiện tại",
+      "major": "Công nghệ Thông tin",
+      "gpa": "3.2 / 4.0",
+      "highschool": "THPT Thanh Chương 1",
+      "highschoolPeriod": "2021 — 2024"
+    },
+    "competencies": {
+      "sectionTitle": "Năng lực cốt lõi",
+      "fullstack": {
+        "title": "Phát triển Full-Stack",
+        "description": "Xây dựng giải pháp web hoàn chỉnh từ giao diện frontend đến backend API mạnh mẽ. Có kinh nghiệm phát triển dashboard, hệ thống POS và ứng dụng web hiện đại với hệ sinh thái React.",
+        "skills": "React / Next.js, TypeScript, Node.js, Supabase, Tailwind CSS, REST APIs"
+      },
+      "architecture": {
+        "title": "Kiến trúc Hệ thống & Hạ tầng",
+        "description": "Thiết kế và triển khai kiến trúc hệ thống quy mô lớn. Tái thiết kế toàn bộ hạ tầng mạng cho cơ sở N trường UEH và xây dựng giải pháp POS cho doanh nghiệp thực tế.",
+        "skills": "Network Design, Database Admin, POS Systems, Infrastructure Planning, Dijkstra Algorithm, C# WinForm"
+      },
+      "research": {
+        "title": "Nghiên cứu chuyên sâu & An ninh mạng",
+        "description": "Thực hiện nghiên cứu an ninh mạng chuyên sâu với kết quả thiết thực. Phát triển framework phát hiện ransomware mới và biên soạn tài liệu kỹ thuật về phương pháp luận bảo mật.",
+        "skills": "Ransomware Detection, Framework Design, Security Analysis, Technical Writing, Academic Research"
+      }
+    }
   },
   "skills": {
     "label": "Kỹ năng",
@@ -24,26 +49,50 @@
   "projects": {
     "label": "Dự án",
     "title": "Dự án nổi bật",
+    "subtitle": "Khám phá hành trình của tôi qua các nghiên cứu học thuật, thử nghiệm cá nhân và giải pháp web chuyên nghiệp.",
     "viewProject": "Xem dự án",
     "viewCode": "Xem mã nguồn",
     "liveDemo": "Xem demo",
     "techStack": "Công nghệ",
     "items": {
-      "clothes": {
-        "title": "Clothes Shop DashBoard",
-        "description": "Hệ thống quản lý cửa hàng thời trang với tính năng quản lý kho hàng, đơn đặt hàng và báo cáo doanh thu trực quan.",
-        "result": "Hỗ trợ chủ cửa hàng nắm bắt tình hình kinh doanh theo thời gian thực. Tối ưu hóa quy trình kiểm kho và xuất nhập hàng, giảm thiểu sai sót do thao tác thủ công, từ đó tiết kiệm đến 30% thời gian vận hành mỗi ngày."
+      "dijkstra": {
+        "title": "Dijkstra Route Optimizer",
+        "description": "Ứng dụng desktop xây dựng bằng C# WinForms, áp dụng thuật toán Dijkstra để tính toán tuyến đường ngắn nhất và tối ưu hóa chi phí vận tải giữa các tỉnh thành khu vực Miền Nam Việt Nam. Tích hợp bản đồ tương tác, hiển thị ma trận kề và ước tính chi phí theo thời gian thực bao gồm quãng đường, nhiên liệu và phí vận chuyển.",
+        "result": "Cho phép các nhà hoạch định logistics xác định ngay lập tức tuyến đường tiết kiệm chi phí nhất giữa hai địa điểm bất kỳ tại miền Nam Việt Nam. Giảm thiểu thời gian lập kế hoạch định tuyến thủ công bằng cách trực quan hóa cấu trúc đồ thị và ma trận kề, cung cấp các ước tính chính xác về nhiên liệu và chi phí để tối ưu hóa hoạt động vận tải hàng hóa.",
+        "context": "Dự án học thuật này nhằm mục đích hiểu và ứng dụng lý thuyết đồ thị vào các kịch bản thực tế, đặc biệt tập trung vào logistics và tối ưu hóa tuyến đường.",
+        "mainWork": "Tôi đã thiết kế kiến trúc hệ thống, tự tay triển khai thuật toán Dijkstra bằng C#, và xây dựng giao diện bản đồ tương tác WinForms để hiển thị đường đi ngắn nhất."
       },
       "coffee": {
-        "title": "Coffee Shop POS System",
+        "title": "Nha Ba Teria POS & Internal System",
         "description": "Hệ thống POS và Dashboard thống kê dữ liệu kinh doanh quán cà phê, theo dõi doanh thu và top sản phẩm bán chạy.",
-        "result": "Giúp tối ưu hóa quy trình order và thanh toán tại quầy. Cung cấp báo cáo trực quan giúp dễ dàng phân tích xu hướng tiêu dùng, từ đó đưa ra chiến lược nhập nguyên liệu và điều chỉnh menu hợp lý, tăng cường hiệu quả kinh doanh."
+        "result": "Giúp tối ưu hóa quy trình order và thanh toán tại quầy. Cung cấp báo cáo trực quan giúp dễ dàng phân tích xu hướng tiêu dùng, từ đó đưa ra chiến lược nhập nguyên liệu và điều chỉnh menu hợp lý, tăng cường hiệu quả kinh doanh.",
+        "context": "Một công cụ nội bộ thực tế được phát triển cho quán cà phê Nhà Ba Teria để quản lý POS, kho hàng và phân tích dữ liệu một cách hiệu quả.",
+        "mainWork": "Tôi đã phát triển toàn bộ frontend sử dụng React, Vite và CSS Modules. Tạo các biểu đồ dữ liệu động bằng Chart.js để theo dõi doanh thu và sản phẩm bán chạy nhất."
       },
       "parker": {
         "title": "Parker The S-Accountant",
         "description": "Ứng dụng quản lý tài chính cá nhân thông minh, giúp người dùng theo dõi các khoản thu chi hằng ngày và thiết lập mục tiêu.",
-        "result": "Mang lại cái nhìn tổng quan và rõ ràng về tình hình tài chính cá nhân. Hỗ trợ phân tích thói quen chi tiêu thông qua các biểu đồ, từ đó giúp người dùng cắt giảm các khoản phí không cần thiết và đạt được mục tiêu tài chính nhanh hơn 20%."
+        "result": "Mang lại cái nhìn tổng quan và rõ ràng về tình hình tài chính cá nhân. Hỗ trợ phân tích thói quen chi tiêu thông qua các biểu đồ, từ đó giúp người dùng cắt giảm các khoản phí không cần thiết và đạt được mục tiêu tài chính nhanh hơn 20%.",
+        "context": "Dự án cá nhân xuất phát từ nhu cầu về một công cụ theo dõi tài chính trực quan, liền mạch với các công nghệ web hiện đại.",
+        "mainWork": "Thiết kế UI/UX, triển khai frontend với Next.js và Tailwind, tích hợp Supabase để xác thực và quản lý cơ sở dữ liệu, đồng thời thêm các hiệu ứng mượt mà với Framer Motion."
+      },
+      "ueh-network": {
+        "title": "UEH Network Infrastructure Design",
+        "description": "Thiết kế mô hình mạng phù hợp với đặc điểm hạ tầng, không gian sử dụng và yêu cầu nghiệp vụ tại cơ sở N của UEH.",
+        "result": "Tạo ra một nền tảng hạ tầng mạng đáp ứng nhu cầu hiện tại, đảm bảo an toàn, dễ quản lý và có khả năng mở rộng trong tương lai.",
+        "context": "“Thiết kế hệ thống mạng UEH – Cơ sở N” được thực hiện nhằm xây dựng một mô hình mạng phù hợp với đặc điểm hạ tầng, không gian sử dụng và yêu cầu nghiệp vụ tại cơ sở N. Thông qua quá trình khảo sát thực tế, phân tích nhu cầu và lựa chọn giải pháp kỹ thuật, đề tài hướng đến việc đề xuất một hệ thống mạng hoàn chỉnh bao gồm các dịch vụ máy chủ, giải pháp bảo mật, phân chia VLAN, kết nối không dây và hệ thống camera giám sát.",
+        "mainWork": "Thực hiện cấu hình các thiết bị mạng bao gồm: Router ISP, Router, Firewall ASA, CoreSW1, CoreSW2, Web Server, và FTP/Email Server."
       }
+    },
+    "details": {
+      "completed": "Thời gian",
+      "teamSize": "Nhân sự",
+      "tools": "Công nghệ",
+      "result": "Kết quả",
+      "sourceCode": "Mã nguồn",
+      "context": "Bối cảnh",
+      "mainWork": "Công việc chính",
+      "backToHome": "Quay lại trang chủ"
     }
   },
   "contact": {

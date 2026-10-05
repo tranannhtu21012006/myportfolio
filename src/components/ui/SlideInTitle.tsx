@@ -16,7 +16,7 @@ export default function SlideInTitle({ children, className = '', delay = 0 }: { 
         {
           x: 0,
           opacity: 1,
-          duration: 1.5,
+          duration: 0.8,
           delay: delay,
           ease: 'power3.out',
           scrollTrigger: {

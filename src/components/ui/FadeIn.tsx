@@ -15,7 +15,7 @@ export default function FadeIn({ children, className = '', delay = 0, style }: {
         { opacity: 0 },
         {
           opacity: 1,
-          duration: 1.5,
+          duration: 0.8,
           delay: delay,
           ease: 'power2.inOut',
           scrollTrigger: {
