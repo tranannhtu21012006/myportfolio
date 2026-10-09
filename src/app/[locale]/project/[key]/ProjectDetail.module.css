@@ -35,25 +35,7 @@
   }
 }
 
-/* Left Column: Sidebar */
-.sidebar {
-  position: sticky;
-  top: 120px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.title {
-  font-family: var(--font-heading);
-  font-size: clamp(32px, 4vw, 48px);
-  font-weight: 800;
-  line-height: 1.1;
-  background: linear-gradient(to right, #fff, #a5b4fc);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
+/* Left Column: Handled by ProjectSidebar component */
 
 .infoGroup {
   display: flex;
