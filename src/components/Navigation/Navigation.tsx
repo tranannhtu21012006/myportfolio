@@ -3,7 +3,6 @@
 import { useTranslations } from 'next-intl';
 import { useState, useEffect } from 'react';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
-import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import styles from './Navigation.module.css';
 
 export default function Navigation() {
@@ -29,10 +28,7 @@ export default function Navigation() {
         <nav className={styles.nav}>
           <a href="#projects" className={styles.link}>{t('projects')}</a>
           <a href="#contact" className={styles.link}>{t('contact')}</a>
-          <div style={{ display: 'flex', gap: '10px', alignItems: 'center' }}>
-            <LanguageSwitcher />
-            <ThemeToggle />
-          </div>
+          <LanguageSwitcher />
         </nav>
       </div>
     </header>

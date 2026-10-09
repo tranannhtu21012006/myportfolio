@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import SmoothScroll from '@/components/ui/SmoothScroll';
 import { Metadata } from 'next';
-import { ThemeProvider } from '@/components/ThemeProvider/ThemeProvider';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
@@ -28,14 +27,12 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem={false}>
-            <SmoothScroll>
-              {children}
-            </SmoothScroll>
-          </ThemeProvider>
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>

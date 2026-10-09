@@ -11,7 +11,7 @@
   font-size: 28px;
   font-weight: 800;
   line-height: 1.2;
-  background: linear-gradient(to right, var(--text-primary), var(--accent-primary));
+  background: linear-gradient(to right, #fff, #a5b4fc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -24,7 +24,7 @@
   font-size: clamp(32px, 4vw, 48px);
   font-weight: 800;
   line-height: 1.1;
-  background: linear-gradient(to right, var(--text-primary), var(--accent-primary));
+  background: linear-gradient(to right, #fff, #a5b4fc);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -36,8 +36,8 @@
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
-  background: var(--glass-bg);
-  border: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   color: var(--text-primary);
   font-family: var(--font-primary);
@@ -49,7 +49,7 @@
 }
 
 .toggleBtn:hover {
-  background: var(--glass-bg-hover);
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .overlay {
@@ -79,7 +79,7 @@
   max-width: 360px;
   height: 100vh;
   background: var(--bg-primary);
-  border-right: 1px solid rgba(var(--glass-overlay), 0.1);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 100;
   padding: 24px;
   transition: left 0.3s ease;
@@ -99,7 +99,7 @@
   align-items: center;
   margin-bottom: 30px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(var(--glass-overlay), 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .drawerTitle {

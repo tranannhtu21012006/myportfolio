@@ -41,8 +41,8 @@ export default function SpiderWeb({ className = '' }: { className?: string }) {
     const NUM_RADIALS = 14;
     const NUM_RINGS = 10;
     const MAX_RADIUS = Math.max(W, H) * 0.48;
-    const LINE_COLOR = 'rgba(var(--glass-overlay), 0.1)';
-    const BRIGHT_COLOR = 'rgba(var(--glass-overlay), 0.2)';
+    const LINE_COLOR = 'rgba(255, 255, 255, 0.1)';
+    const BRIGHT_COLOR = 'rgba(255, 255, 255, 0.2)';
     const WEB_WIDTH = 1.5;
 
     // 1. Build Graph Nodes
@@ -197,7 +197,7 @@ export default function SpiderWeb({ className = '' }: { className?: string }) {
       ctx.beginPath();
       ctx.arc(-2, -8, 1.5, 0, Math.PI * 2);
       ctx.arc(2, -8, 1.5, 0, Math.PI * 2);
-      ctx.fillStyle = '#1F2228';
+      ctx.fillStyle = '#ffffff';
       ctx.fill();
 
       ctx.restore();

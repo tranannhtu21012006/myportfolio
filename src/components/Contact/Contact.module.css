@@ -67,14 +67,14 @@
   align-items: center;
   gap: 16px;
   padding: 16px 32px;
-  background: rgba(var(--glass-overlay), 0.03);
-  border: 1px solid rgba(var(--glass-overlay), 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xl);
   transition: all var(--transition-medium);
 }
 
 .emailBtn:hover {
-  background: rgba(var(--glass-overlay), 0.08);
+  background: rgba(255, 255, 255, 0.08);
   border-color: var(--accent-primary);
   transform: translateY(-2px);
 }
