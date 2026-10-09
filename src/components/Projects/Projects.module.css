@@ -34,7 +34,7 @@
   gap: 16px;
   margin-bottom: 60px;
   padding-bottom: 30px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(var(--glass-overlay), 0.05);
 }
 
 .filterBtn {
@@ -44,7 +44,7 @@
   padding: 10px 24px;
   border-radius: 40px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(var(--glass-overlay), 0.1);
   color: var(--text-secondary);
   font-size: 15px;
   font-weight: 500;
@@ -52,8 +52,8 @@
 }
 
 .filterBtn:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(var(--glass-overlay), 0.05);
+  border-color: rgba(var(--glass-overlay), 0.2);
   color: var(--text-primary);
 }
 
@@ -64,7 +64,7 @@
 }
 
 .countBadge {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(var(--glass-overlay), 0.1);
   padding: 2px 8px;
   border-radius: 12px;
   font-size: 12px;
@@ -72,7 +72,7 @@
 }
 
 .filterBtn.active .countBadge {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(var(--glass-overlay), 0.2);
 }
 
 .grid {
@@ -84,10 +84,10 @@
 .projectCard {
   background: linear-gradient(
     145deg,
-    rgba(255, 255, 255, 0.02) 0%,
-    rgba(255, 255, 255, 0.01) 100%
+    rgba(var(--glass-overlay), 0.02) 0%,
+    rgba(var(--glass-overlay), 0.01) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(var(--glass-overlay), 0.05);
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.4s ease;
@@ -96,7 +96,7 @@
 }
 
 .projectCard:hover {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(var(--glass-overlay), 0.15);
   transform: translateY(-8px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
@@ -129,7 +129,7 @@
 }
 
 .overlayIcon {
-  color: white;
+  color: var(--text-primary);
   transform: scale(0.5);
   transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -240,7 +240,7 @@
 
 .modalContent {
   background: var(--bg-tertiary);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(var(--glass-overlay), 0.1);
   border-radius: 24px;
   width: 100%;
   max-width: 700px;
@@ -256,7 +256,7 @@
   width: 8px;
 }
 .modalContent::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(var(--glass-overlay), 0.2);
   border-radius: 4px;
 }
 
@@ -265,8 +265,8 @@
   top: 16px;
   right: 16px;
   background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: white;
+  border: 1px solid rgba(var(--glass-overlay), 0.2);
+  color: var(--text-primary);
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -279,7 +279,7 @@
 }
 
 .modalClose:hover {
-  background: white;
+  background: var(--text-primary);
   color: black;
 }
 
@@ -305,7 +305,7 @@
   font-family: var(--font-heading);
   font-size: 32px;
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   margin-top: 0;
   margin-bottom: 16px;
 }
@@ -313,12 +313,12 @@
 .modalDescription {
   font-size: 16px;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(var(--glass-overlay), 0.8);
   margin-bottom: 24px;
 }
 
 .modalResultSection {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(var(--glass-overlay), 0.05);
   border-left: 4px solid var(--accent-secondary);
   padding: 16px 20px;
   border-radius: 0 12px 12px 0;
@@ -338,7 +338,7 @@
 .modalResultText {
   font-size: 15px;
   line-height: 1.6;
-  color: white;
+  color: var(--text-primary);
   margin: 0;
 }
 

@@ -22,12 +22,12 @@
   background: linear-gradient(
     135deg,
     rgba(108, 99, 255, 0.06) 0%,
-    rgba(255, 255, 255, 0.03) 50%,
+    rgba(var(--glass-overlay), 0.03) 50%,
     rgba(0, 212, 170, 0.04) 100%
   );
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(var(--glass-overlay), 0.08);
   border-radius: var(--radius-md);
   padding: 28px;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -150,8 +150,8 @@
   font-weight: 500;
   padding: 4px 10px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(var(--glass-overlay), 0.05);
+  border: 1px solid rgba(var(--glass-overlay), 0.08);
   color: var(--text-secondary);
   transition: all 0.3s ease;
 }
@@ -167,7 +167,7 @@
   background: linear-gradient(
     135deg,
     rgba(0, 212, 170, 0.05) 0%,
-    rgba(255, 255, 255, 0.03) 100%
+    rgba(var(--glass-overlay), 0.03) 100%
   );
 }
 
@@ -205,7 +205,7 @@
     rgba(108, 99, 255, 0.04) 0%,
     rgba(56, 189, 248, 0.04) 100%
   );
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(var(--glass-overlay), 0.06);
   border-radius: var(--radius-md);
   padding: 20px 24px;
   transition: all 0.4s ease;
@@ -246,7 +246,7 @@
 .progressTrack {
   width: 100%;
   height: 8px;
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(var(--glass-overlay), 0.06);
   border-radius: 100px;
   overflow: visible;
   position: relative;
@@ -483,7 +483,7 @@
   text-align: left;
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(var(--glass-overlay), 0.1);
   transition: all 0.4s ease;
 }
 
@@ -614,7 +614,7 @@
   background: linear-gradient(
     to right,
     transparent,
-    rgba(255, 255, 255, 0.08),
+    rgba(var(--glass-overlay), 0.08),
     transparent
   );
   margin-bottom: 20px;
@@ -632,14 +632,14 @@
   gap: 8px;
   padding: 6px 10px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(var(--glass-overlay), 0.03);
+  border: 1px solid rgba(var(--glass-overlay), 0.05);
   transition: all 0.3s ease;
 }
 
 .skillItem:hover {
-  background: rgba(255, 255, 255, 0.07);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(var(--glass-overlay), 0.07);
+  border-color: rgba(var(--glass-overlay), 0.12);
   transform: translateX(4px);
 }
 

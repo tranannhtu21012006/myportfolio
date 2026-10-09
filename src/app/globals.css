@@ -7,29 +7,30 @@
 
 /* ---------- CSS Custom Properties ---------- */
 :root {
-  /* Colors */
-  --bg-primary: #0B1215;
-  --bg-secondary: #111111;
-  --bg-tertiary: #1a1a25;
+  /* Colors - Simply White Theme */
+  --bg-primary: #F5F6F1; /* Simply White - warm off-white */
+  --bg-secondary: #EBECE6; /* Slightly darker for depth */
+  --bg-tertiary: #E0E2DB;
+  --glass-overlay: 0, 0, 0; /* Used for semi-transparent borders/bg on light theme */
   
   /* Glass */
-  --glass-bg: rgba(255, 255, 255, 0.04);
-  --glass-bg-hover: rgba(255, 255, 255, 0.08);
-  --glass-border: rgba(255, 255, 255, 0.08);
-  --glass-border-hover: rgba(255, 255, 255, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.5);
+  --glass-bg-hover: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --glass-border-hover: rgba(0, 0, 0, 0.1);
   --glass-blur: 20px;
   
   /* Text */
-  --text-primary: #f0f0f5;
-  --text-secondary: #8888a0;
-  --text-tertiary: #555570;
+  --text-primary: #1F2228;
+  --text-secondary: #4A505A;
+  --text-tertiary: #6E7582;
   
   /* Accent */
-  --accent-primary: #6c63ff;
-  --accent-secondary: #00d4aa;
-  --accent-gradient: linear-gradient(135deg, #6c63ff, #00d4aa);
-  --accent-glow: rgba(108, 99, 255, 0.25);
-  --accent-glow-secondary: rgba(0, 212, 170, 0.2);
+  --accent-primary: #5248FF; /* Deepened for light bg */
+  --accent-secondary: #00B894;
+  --accent-gradient: linear-gradient(135deg, #5248FF, #00B894);
+  --accent-glow: rgba(82, 72, 255, 0.15);
+  --accent-glow-secondary: rgba(0, 184, 148, 0.15);
   
   /* Typography */
   --font-heading: 'Space Grotesk', sans-serif;
@@ -102,7 +103,7 @@ ul, ol {
 /* ---------- Selection ---------- */
 ::selection {
   background: var(--accent-primary);
-  color: var(--text-primary);
+  color: #ffffff;
 }
 
 /* ---------- Scrollbar ---------- */

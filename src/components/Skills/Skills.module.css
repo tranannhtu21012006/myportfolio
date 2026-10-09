@@ -39,7 +39,7 @@
   width: 130px;
   height: 140px;
   background: rgba(30, 30, 30, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(var(--glass-overlay), 0.05);
   border-radius: 20px;
   backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -51,8 +51,8 @@
 .techItem:hover {
   transform: translateY(-15px) scale(1.1) rotateX(10deg);
   background: rgba(50, 50, 50, 0.8);
-  border-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 255, 255, 0.1);
+  border-color: rgba(var(--glass-overlay), 0.3);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), 0 0 20px rgba(var(--glass-overlay), 0.1);
   z-index: 10;
 }
 
