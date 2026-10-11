@@ -12,6 +12,17 @@ export type Project = {
 
 export const PROJECT_DATA: Project[] = [
   {
+    id: 5,
+    key: 'secureaigateway',
+    category: 'Personal',
+    date: '2026 - Present',
+    teamSize: 1,
+    techStack: ['FastAPI', 'PostgreSQL', 'Redis', 'k3d', 'Helm', 'Docker'],
+    image: '/secureaigateway.png',
+    demoUrl: '#',
+    githubUrl: 'https://github.com/tranannhtu21012006/secureAigateway'
+  },
+  {
     id: 4,
     key: 'ueh-network',
     category: 'Academic',
