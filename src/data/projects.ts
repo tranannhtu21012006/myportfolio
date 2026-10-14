@@ -20,7 +20,7 @@ export const PROJECT_DATA: Project[] = [
     techStack: ['FastAPI', 'PostgreSQL', 'Redis', 'k3d', 'Helm', 'Docker'],
     image: '/secureaigateway.png',
     demoUrl: '#',
-    githubUrl: 'https://github.com/tranannhtu21012006/secureAigateway'
+    githubUrl: 'https://github.com/tranannhtu21012006/SecureAI-Gateway'
   },
   {
     id: 4,

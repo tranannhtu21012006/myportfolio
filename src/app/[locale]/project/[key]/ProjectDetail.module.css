@@ -159,3 +159,95 @@
   color: var(--text-secondary);
   white-space: pre-line;
 }
+
+/* ===== MICRO-INTERACTIONS ===== */
+
+/* Lightbulb icon glows on hover */
+.contentBlock:hover .contentTitle svg {
+  filter: drop-shadow(0 0 8px rgba(108, 99, 255, 0.8)) drop-shadow(0 0 20px rgba(108, 99, 255, 0.4));
+  color: #fbbf24;
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+.contentTitle svg {
+  transition: filter 0.3s ease, color 0.3s ease;
+}
+
+/* Content block subtle lift on hover */
+.contentBlock {
+  transition: transform 0.3s ease;
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.contentBlock:hover {
+  transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Tech tags pop on hover */
+.tag {
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+.tag:hover {
+  background: rgba(108, 99, 255, 0.15);
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 99, 255, 0.2);
+}
+
+/* Image wrapper zoom on hover */
+.imageWrapper {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+}
+
+/* Result box glow on hover */
+.resultBox {
+  transition: all 0.3s ease;
+}
+
+.resultBox:hover {
+  border-color: rgba(108, 99, 255, 0.4);
+  box-shadow: 0 0 20px rgba(108, 99, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* GitHub button shine effect */
+.githubBtn {
+  position: relative;
+  overflow: hidden;
+}
+
+.githubBtn::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.08), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+.githubBtn:hover::after {
+  left: 120%;
+}
+
+/* Back link arrow animation */
+.backLink:hover svg {
+  transform: translateX(-4px);
+  transition: transform 0.3s ease;
+}
+
+.backLink svg {
+  transition: transform 0.3s ease;
+}
+
