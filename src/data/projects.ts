@@ -23,6 +23,17 @@ export const PROJECT_DATA: Project[] = [
     githubUrl: 'https://github.com/tranannhtu21012006/SecureAI-Gateway'
   },
   {
+    id: 6,
+    key: 'pubgapp',
+    category: 'Academic',
+    date: 'Sep 2026 - Oct 2026',
+    teamSize: 5,
+    techStack: ['Java', 'Android SDK', 'Firebase', 'Room (SQLite)', 'MVVM', 'JUnit / Espresso'],
+    image: '/pubgapp.png',
+    demoUrl: 'https://www.youtube.com/playlist?list=PLICDM9hvPOUg',
+    githubUrl: 'https://github.com/tranannhtu21012006/NHOM3-MobileApp'
+  },
+  {
     id: 4,
     key: 'ueh-network',
     category: 'Academic',
